@@ -4,14 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.enums.Conduct;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class StudentReport {
-    private Person student;
-    private Double averageScore;
-    private Conduct conduct;
+public class Book {
+    private String bookId;
+    private String bookTitle;
+    private String author;
+    private String isbn;
 }

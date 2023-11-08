@@ -12,6 +12,6 @@ public interface StudentServices {
     String learn(Subject subject);
     Payment payFees(Payment payment);
     Set<Question> takeAssessment(Assessment assessment);
-    Map<Student, List<Subject>> registerSubject(Student student, List<Subject> subjects);
+    Map<Person, List<Subject>> registerSubject(Person student, List<Subject> subjects);
 
 }

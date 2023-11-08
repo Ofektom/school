@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.example.enums.AssessType;
-import org.example.enums.Classes;
+import org.example.enums.AssessmentType;
+import org.example.enums.GradeLevel;
 
 import java.util.Set;
 
@@ -14,10 +14,10 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Assessment {
-    private Student student;
+    private Person student;
     private Subject subject;
     private Set<Question> questions;
-    private Classes classes;
-    private AssessType type;
+    private GradeLevel classes;
+    private AssessmentType type;
     private Integer score;
 }

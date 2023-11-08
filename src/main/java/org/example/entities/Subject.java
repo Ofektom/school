@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.enums.SubjectName;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Subject {
-    private String title;
-    private Teacher teacher;
+    private SubjectName title;
     private String content;
-    private String duration;
+    private Integer durationInMinutes;
 }

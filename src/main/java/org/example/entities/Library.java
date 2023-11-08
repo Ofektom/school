@@ -5,12 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher extends Staff{
-    private String specialization;
+public class Library {
+    public static Map<Book, Integer> listOfBooks = new HashMap<>();
+
+    private Book book;
+    private Integer quantity;
+
 }
